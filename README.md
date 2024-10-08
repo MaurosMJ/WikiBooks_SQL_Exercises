@@ -768,4 +768,4 @@ INSERT INTO Trained_In VALUES(7,7,'2008-01-01','2008-12-31');
 
 ## Credits
 
-This repository is maintained by [MaurosMJ](https://github.com/MaurosMJ). The exercises are based on the [Wikibooks/SQL Exercises](https://en.wikibooks.org/wiki/SQL_Exercises).
+This repository is maintained by [MaurosMJ](https://github.com/MaurosMJ). The exercises are based on the [Wikibooks/SQL Exercises](https://en.wikibooks.org/wiki/SQL_Exercises). I'm not the author of the proposed exercises, however, I have solved all the activities.
