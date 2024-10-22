@@ -28,3 +28,6 @@ select name from products;
 
 -- 2.Select the names and the prices of all the products in the store.
 select name, price from products;
+
+-- 3.Select the name of the products with a price less than or equal to $200.
+select name, price from products where price <= 200;
