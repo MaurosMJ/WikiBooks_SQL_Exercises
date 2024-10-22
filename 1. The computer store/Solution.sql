@@ -43,3 +43,5 @@ select name, avg(price) as "AVG" from products where price group by name;
 -- 7.Compute the average price of all products with manufacturer code equal to 2.
 select name, manufacturer, avg(price) as "AVG" from products where manufacturer = 2 group by name, manufacturer;
 
+-- 8.Compute the number of products with a price larger than or equal to $180.
+select count(*) as "Count" from products where price >= 180;
