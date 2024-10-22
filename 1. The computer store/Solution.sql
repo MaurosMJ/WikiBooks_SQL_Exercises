@@ -25,3 +25,6 @@ commit;
 
 -- 1.Select the names of all the products in the store.
 select name from products;
+
+-- 2.Select the names and the prices of all the products in the store.
+select name, price from products;
