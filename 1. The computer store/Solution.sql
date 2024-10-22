@@ -63,3 +63,6 @@ select avg(p.price) as "AVG", m.name from products p join manufacturers m on (p.
 
 -- 14.Select the names of manufacturer whose products have an average price larger than or equal to $150.
 select m.name from products p join manufacturers m on (p.manufacturer = m.code) group by m.name having avg(p.price) >= 150;
+
+-- 15.Select the name and price of the cheapest product.
+select name, price from products where price = (select min(price) from products);
