@@ -66,3 +66,10 @@ select m.name from products p join manufacturers m on (p.manufacturer = m.code) 
 
 -- 15.Select the name and price of the cheapest product.
 select name, price from products where price = (select min(price) from products);
+
+-- 16.Select the name of each manufacturer along with the name and price of its most expensive product.
+-- 17.Select the name of each manufacturer which have an average price above $145 and contain at least 2 different products.
+-- 18.Add a new product: Loudspeakers, $70, manufacturer 2.
+-- 19.Update the name of product 8 to "Laser Printer".
+-- 20.Apply a 10% discount to all products.
+-- 21.Apply a 10% discount to all products with a price larger than or equal to $120.
