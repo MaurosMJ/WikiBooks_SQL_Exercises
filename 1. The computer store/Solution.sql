@@ -31,3 +31,6 @@ select name, price from products;
 
 -- 3.Select the name of the products with a price less than or equal to $200.
 select name, price from products where price <= 200;
+
+-- 4.Select all the products with a price between $60 and $120.
+select name, price from products where price between 60 and 120;
