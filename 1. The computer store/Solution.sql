@@ -57,3 +57,6 @@ select p.name, p.price, m.name from products p join manufacturers m on (p.manufa
 
 -- 12.Select the average price of each manufacturer's products, showing only the manufacturer's code.
 select avg(p.price) as "AVG", p.manufacturer from products p group by p.manufacturer;
+
+-- 13.Select the average price of each manufacturer's products, showing the manufacturer's name.
+select avg(p.price) as "AVG", m.name from products p join manufacturers m on (p.manufacturer = m.code) group by m.name;
