@@ -51,3 +51,6 @@ select name, price from products where price >= 180 order by 2 desc, 1 asc;
 
 -- 10.Select all the data from the products, including all the data for each product's manufacturer.
 select p.code, p.name, p.price, p.manufacturer, m.code, m.name from products p join manufacturers m on (p.manufacturer = m.code);
+
+-- 11.Select the product name, price, and manufacturer name of all the products.
+select p.name, p.price, m.name from products p join manufacturers m on (p.manufacturer = m.code);
