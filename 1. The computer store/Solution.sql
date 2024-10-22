@@ -39,3 +39,7 @@ select name, price from products where price between 60 and 120;
 
 -- 6.Compute the average price of all the products.
 select name, avg(price) as "AVG" from products where price group by name;
+
+-- 7.Compute the average price of all products with manufacturer code equal to 2.
+select name, manufacturer, avg(price) as "AVG" from products where manufacturer = 2 group by name, manufacturer;
+
