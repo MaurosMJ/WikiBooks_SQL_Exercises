@@ -60,3 +60,6 @@ select avg(p.price) as "AVG", p.manufacturer from products p group by p.manufact
 
 -- 13.Select the average price of each manufacturer's products, showing the manufacturer's name.
 select avg(p.price) as "AVG", m.name from products p join manufacturers m on (p.manufacturer = m.code) group by m.name;
+
+-- 14.Select the names of manufacturer whose products have an average price larger than or equal to $150.
+select m.name from products p join manufacturers m on (p.manufacturer = m.code) group by m.name having avg(p.price) >= 150;
