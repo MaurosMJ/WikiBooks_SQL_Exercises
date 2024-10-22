@@ -34,3 +34,8 @@ select name, price from products where price <= 200;
 
 -- 4.Select all the products with a price between $60 and $120.
 select name, price from products where price between 60 and 120;
+
+-- 5.Select the name and price in cents (i.e., the price must be multiplied by 100).
+
+-- 6.Compute the average price of all the products.
+select name, avg(price) as "AVG" from products where price group by name;
